@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Airbnb JavaScript Style Guide by airbnb</title>
+    <title>Airbnb JavaScript Style Guide by PinkLabs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -13,14 +13,14 @@
     <section class="page-header">
       <h1 class="project-name">Airbnb JavaScript Style Guide</h1>
       <h2 class="project-tagline">A mostly reasonable approach to JavaScript</h2>
-      <a href="https://github.com/airbnb/javascript" class="btn">View on GitHub</a>
-      <a href="https://github.com/airbnb/javascript/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/airbnb/javascript/tarball/master" class="btn">Download .tar.gz</a>
+      <a href="https://github.com/PinkLabs/javascript" class="btn">View on GitHub</a>
+      <a href="https://github.com/PinkLabs/javascript/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/PinkLabs/javascript/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
       <h1>
-<a id="airbnb-javascript-style-guide-" class="anchor" href="#airbnb-javascript-style-guide-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Airbnb JavaScript Style Guide() {</h1>
+<a id="airbnb-javascript-style-guide-" class="anchor" href="#airbnb-javascript-style-guide-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Airbnb JavaScript Style Guide() {</h1>
 
 <p><em>A mostly reasonable approach to JavaScript</em></p>
 
@@ -37,7 +37,7 @@
 </ul>
 
 <h2>
-<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h2>
 
 <ol>
 <li><a href="#types">Types</a></li>
@@ -79,7 +79,7 @@
 </ol>
 
 <h2>
-<a id="types" class="anchor" href="#types" aria-hidden="true"><span class="octicon octicon-link"></span></a>Types</h2>
+<a id="types" class="anchor" href="#types" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Types</h2>
 
 <ul>
 <li>
@@ -121,7 +121,7 @@ bar[<span class="pl-c1">0</span>] <span class="pl-k">=</span> <span class="pl-c1
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
 
 <ul>
 <li>
@@ -178,7 +178,7 @@ bar[<span class="pl-c1">0</span>] <span class="pl-k">=</span> <span class="pl-c1
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="objects" class="anchor" href="#objects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Objects</h2>
+<a id="objects" class="anchor" href="#objects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Objects</h2>
 
 <ul>
 <li>
@@ -336,7 +336,7 @@ bar[<span class="pl-c1">0</span>] <span class="pl-k">=</span> <span class="pl-c1
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="arrays" class="anchor" href="#arrays" aria-hidden="true"><span class="octicon octicon-link"></span></a>Arrays</h2>
+<a id="arrays" class="anchor" href="#arrays" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arrays</h2>
 
 <ul>
 <li>
@@ -376,20 +376,20 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 }
 
 <span class="pl-c">// good</span>
-<span class="pl-k">const</span> <span class="pl-c1">itemsCopy</span> <span class="pl-k">=</span> [...<span class="pl-smi">items</span>];</pre></div>
+<span class="pl-k">const</span> <span class="pl-c1">itemsCopy</span> <span class="pl-k">=</span> [<span class="pl-k">...</span>items];</pre></div>
 </li>
 <li>
 <p><a href="#4.4">4.4</a> <a name="4.4"></a> To convert an array-like object to an array, use Array#from.</p>
 
-<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">foo</span> <span class="pl-k">=</span> <span class="pl-smi">document</span>.<span class="pl-en">querySelectorAll</span>(<span class="pl-s"><span class="pl-pds">'</span>.foo<span class="pl-pds">'</span></span>);
-<span class="pl-k">const</span> <span class="pl-c1">nodes</span> <span class="pl-k">=</span> <span class="pl-smi">Array</span>.<span class="pl-en">from</span>(foo);</pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">foo</span> <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-en">querySelectorAll</span>(<span class="pl-s"><span class="pl-pds">'</span>.foo<span class="pl-pds">'</span></span>);
+<span class="pl-k">const</span> <span class="pl-c1">nodes</span> <span class="pl-k">=</span> <span class="pl-c1">Array</span>.<span class="pl-en">from</span>(foo);</pre></div>
 </li>
 </ul>
 
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="destructuring" class="anchor" href="#destructuring" aria-hidden="true"><span class="octicon octicon-link"></span></a>Destructuring</h2>
+<a id="destructuring" class="anchor" href="#destructuring" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Destructuring</h2>
 
 <ul>
 <li>
@@ -460,7 +460,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="strings" class="anchor" href="#strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings</h2>
+<a id="strings" class="anchor" href="#strings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Strings</h2>
 
 <ul>
 <li>
@@ -525,7 +525,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="functions" class="anchor" href="#functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functions</h2>
+<a id="functions" class="anchor" href="#functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Functions</h2>
 
 <ul>
 <li>
@@ -594,7 +594,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 
 <div class="highlight highlight-source-js"><pre>  <span class="pl-c">// bad</span>
   <span class="pl-k">function</span> <span class="pl-en">concatenateAll</span>() {
-    <span class="pl-k">const</span> <span class="pl-c1">args</span> <span class="pl-k">=</span> <span class="pl-smi">Array</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">slice</span>.<span class="pl-c1">call</span>(arguments);
+    <span class="pl-k">const</span> <span class="pl-c1">args</span> <span class="pl-k">=</span> <span class="pl-c1">Array</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">slice</span>.<span class="pl-c1">call</span>(arguments);
     <span class="pl-k">return</span> <span class="pl-smi">args</span>.<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>);
   }
 
@@ -697,7 +697,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="arrow-functions" class="anchor" href="#arrow-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Arrow Functions</h2>
+<a id="arrow-functions" class="anchor" href="#arrow-functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arrow Functions</h2>
 
 <ul>
 <li>
@@ -788,7 +788,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="constructors" class="anchor" href="#constructors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Constructors</h2>
+<a id="constructors" class="anchor" href="#constructors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Constructors</h2>
 
 <ul>
 <li>
@@ -800,7 +800,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 
 <div class="highlight highlight-source-js"><pre>  <span class="pl-c">// bad</span>
   <span class="pl-k">function</span> <span class="pl-en">Queue</span>(<span class="pl-smi">contents</span> <span class="pl-k">=</span> []) {
-    <span class="pl-v">this</span>.<span class="pl-smi">_queue</span> <span class="pl-k">=</span> [...<span class="pl-smi">contents</span>];
+    <span class="pl-v">this</span>.<span class="pl-smi">_queue</span> <span class="pl-k">=</span> [<span class="pl-k">...</span>contents];
   }
   <span class="pl-c1">Queue</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">pop</span> <span class="pl-k">=</span> <span class="pl-k">function</span> () {
     <span class="pl-k">const</span> <span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-v">this</span>.<span class="pl-smi">_queue</span>[<span class="pl-c1">0</span>];
@@ -812,7 +812,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
   <span class="pl-c">// good</span>
   <span class="pl-k">class</span> <span class="pl-en">Queue</span> {
     <span class="pl-en">constructor</span>(<span class="pl-smi">contents</span> <span class="pl-k">=</span> []) {
-      <span class="pl-v">this</span>.<span class="pl-smi">_queue</span> <span class="pl-k">=</span> [...<span class="pl-smi">contents</span>];
+      <span class="pl-v">this</span>.<span class="pl-smi">_queue</span> <span class="pl-k">=</span> [<span class="pl-k">...</span>contents];
     }
     <span class="pl-en">pop</span>() {
       <span class="pl-k">const</span> <span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-v">this</span>.<span class="pl-smi">_queue</span>[<span class="pl-c1">0</span>];
@@ -902,7 +902,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="modules" class="anchor" href="#modules" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modules</h2>
+<a id="modules" class="anchor" href="#modules" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modules</h2>
 
 <ul>
 <li>
@@ -914,7 +914,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 
 <div class="highlight highlight-source-js"><pre>  <span class="pl-c">// bad</span>
   <span class="pl-k">const</span> <span class="pl-c1">AirbnbStyleGuide</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./AirbnbStyleGuide<span class="pl-pds">'</span></span>);
-  <span class="pl-smi">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> <span class="pl-smi">AirbnbStyleGuide</span>.<span class="pl-smi">es6</span>;
+  <span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> <span class="pl-smi">AirbnbStyleGuide</span>.<span class="pl-smi">es6</span>;
 
   <span class="pl-c">// ok</span>
   <span class="pl-k">import</span> <span class="pl-smi">AirbnbStyleGuide</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>./AirbnbStyleGuide<span class="pl-pds">'</span></span>;
@@ -958,7 +958,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="iterators-and-generators" class="anchor" href="#iterators-and-generators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iterators and Generators</h2>
+<a id="iterators-and-generators" class="anchor" href="#iterators-and-generators" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Iterators and Generators</h2>
 
 <ul>
 <li>
@@ -1001,7 +1001,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="properties" class="anchor" href="#properties" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properties</h2>
+<a id="properties" class="anchor" href="#properties" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Properties</h2>
 
 <ul>
 <li>
@@ -1039,7 +1039,7 @@ someStack[<span class="pl-smi">someStack</span>.<span class="pl-c1">length</span
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="variables" class="anchor" href="#variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables</h2>
+<a id="variables" class="anchor" href="#variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variables</h2>
 
 <ul>
 <li>
@@ -1111,7 +1111,7 @@ superPower <span class="pl-k">=</span> <span class="pl-k">new</span> <span class
 
 <div class="highlight highlight-source-js"><pre>  <span class="pl-c">// good</span>
   <span class="pl-k">function</span> () {
-    <span class="pl-c1">test</span>();
+    <span class="pl-en">test</span>();
     <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>doing stuff..<span class="pl-pds">'</span></span>);
 
     <span class="pl-c">//..other stuff..</span>
@@ -1155,7 +1155,7 @@ superPower <span class="pl-k">=</span> <span class="pl-k">new</span> <span class
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="hoisting" class="anchor" href="#hoisting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hoisting</h2>
+<a id="hoisting" class="anchor" href="#hoisting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hoisting</h2>
 
 <ul>
 <li>
@@ -1249,7 +1249,7 @@ superPower <span class="pl-k">=</span> <span class="pl-k">new</span> <span class
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="comparison-operators--equality" class="anchor" href="#comparison-operators--equality" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparison Operators &amp; Equality</h2>
+<a id="comparison-operators--equality" class="anchor" href="#comparison-operators--equality" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Comparison Operators &amp; Equality</h2>
 
 <ul>
 <li>
@@ -1309,7 +1309,7 @@ superPower <span class="pl-k">=</span> <span class="pl-k">new</span> <span class
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="blocks" class="anchor" href="#blocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blocks</h2>
+<a id="blocks" class="anchor" href="#blocks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blocks</h2>
 
 <ul>
 <li>
@@ -1363,7 +1363,7 @@ superPower <span class="pl-k">=</span> <span class="pl-k">new</span> <span class
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="comments" class="anchor" href="#comments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comments</h2>
+<a id="comments" class="anchor" href="#comments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Comments</h2>
 
 <ul>
 <li>
@@ -1464,7 +1464,7 @@ superPower <span class="pl-k">=</span> <span class="pl-k">new</span> <span class
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="whitespace" class="anchor" href="#whitespace" aria-hidden="true"><span class="octicon octicon-link"></span></a>Whitespace</h2>
+<a id="whitespace" class="anchor" href="#whitespace" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Whitespace</h2>
 
 <ul>
 <li>
@@ -1531,7 +1531,7 @@ superPower <span class="pl-k">=</span> <span class="pl-k">new</span> <span class
 
   <span class="pl-c">// bad</span>
   <span class="pl-k">function</span> <span class="pl-en">fight</span> () {
-    <span class="pl-en">console</span>.<span class="pl-en">log</span> (<span class="pl-s"><span class="pl-pds">'</span>Swooosh!<span class="pl-pds">'</span></span>);
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span> (<span class="pl-s"><span class="pl-pds">'</span>Swooosh!<span class="pl-pds">'</span></span>);
   }
 
   <span class="pl-c">// good</span>
@@ -1578,10 +1578,10 @@ emphasizes that the line is a method call, not a new statement.</p>
 
 <span class="pl-c">// bad</span>
 <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#items<span class="pl-pds">'</span></span>).
-  <span class="pl-c1">find</span>(<span class="pl-s"><span class="pl-pds">'</span>.selected<span class="pl-pds">'</span></span>).
+  <span class="pl-en">find</span>(<span class="pl-s"><span class="pl-pds">'</span>.selected<span class="pl-pds">'</span></span>).
     <span class="pl-en">highlight</span>().
     <span class="pl-en">end</span>().
-  <span class="pl-c1">find</span>(<span class="pl-s"><span class="pl-pds">'</span>.open<span class="pl-pds">'</span></span>).
+  <span class="pl-en">find</span>(<span class="pl-s"><span class="pl-pds">'</span>.open<span class="pl-pds">'</span></span>).
     <span class="pl-en">updateCount</span>();
 
 <span class="pl-c">// good</span>
@@ -1751,7 +1751,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="commas" class="anchor" href="#commas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commas</h2>
+<a id="commas" class="anchor" href="#commas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Commas</h2>
 
 <ul>
 <li>
@@ -1840,7 +1840,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="semicolons" class="anchor" href="#semicolons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Semicolons</h2>
+<a id="semicolons" class="anchor" href="#semicolons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Semicolons</h2>
 
 <ul>
 <li>
@@ -1873,7 +1873,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="type-casting--coercion" class="anchor" href="#type-casting--coercion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Type Casting &amp; Coercion</h2>
+<a id="type-casting--coercion" class="anchor" href="#type-casting--coercion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Type Casting &amp; Coercion</h2>
 
 <ul>
 <li>
@@ -1949,7 +1949,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="naming-conventions" class="anchor" href="#naming-conventions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Naming Conventions</h2>
+<a id="naming-conventions" class="anchor" href="#naming-conventions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Naming Conventions</h2>
 
 <ul>
 <li>
@@ -2082,7 +2082,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="accessors" class="anchor" href="#accessors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Accessors</h2>
+<a id="accessors" class="anchor" href="#accessors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Accessors</h2>
 
 <ul>
 <li>
@@ -2138,7 +2138,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="events" class="anchor" href="#events" aria-hidden="true"><span class="octicon octicon-link"></span></a>Events</h2>
+<a id="events" class="anchor" href="#events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Events</h2>
 
 <ul>
 <li>
@@ -2147,7 +2147,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
 <span class="pl-en">$</span>(<span class="pl-v">this</span>).<span class="pl-en">trigger</span>(<span class="pl-s"><span class="pl-pds">'</span>listingUpdated<span class="pl-pds">'</span></span>, <span class="pl-smi">listing</span>.<span class="pl-c1">id</span>);
 
-...
+<span class="pl-k">...</span>
 
 <span class="pl-en">$</span>(<span class="pl-v">this</span>).<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>listingUpdated<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">e</span>, <span class="pl-smi">listingId</span>) {
   <span class="pl-c">// do something with listingId</span>
@@ -2158,7 +2158,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <div class="highlight highlight-source-js"><pre><span class="pl-c">// good</span>
 <span class="pl-en">$</span>(<span class="pl-v">this</span>).<span class="pl-en">trigger</span>(<span class="pl-s"><span class="pl-pds">'</span>listingUpdated<span class="pl-pds">'</span></span>, { listingId<span class="pl-k">:</span> <span class="pl-smi">listing</span>.<span class="pl-c1">id</span> });
 
-...
+<span class="pl-k">...</span>
 
 <span class="pl-en">$</span>(<span class="pl-v">this</span>).<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>listingUpdated<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">e</span>, <span class="pl-smi">data</span>) {
   <span class="pl-c">// do something with data.listingId</span>
@@ -2169,7 +2169,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 </ul>
 
 <h2>
-<a id="jquery" class="anchor" href="#jquery" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery</h2>
+<a id="jquery" class="anchor" href="#jquery" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>jQuery</h2>
 
 <ul>
 <li>
@@ -2234,7 +2234,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="ecmascript-5-compatibility" class="anchor" href="#ecmascript-5-compatibility" aria-hidden="true"><span class="octicon octicon-link"></span></a>ECMAScript 5 Compatibility</h2>
+<a id="ecmascript-5-compatibility" class="anchor" href="#ecmascript-5-compatibility" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ECMAScript 5 Compatibility</h2>
 
 <ul>
 <li>
@@ -2244,7 +2244,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="ecmascript-6-styles" class="anchor" href="#ecmascript-6-styles" aria-hidden="true"><span class="octicon octicon-link"></span></a>ECMAScript 6 Styles</h2>
+<a id="ecmascript-6-styles" class="anchor" href="#ecmascript-6-styles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ECMAScript 6 Styles</h2>
 
 <ul>
 <li>
@@ -2270,7 +2270,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing</h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing</h2>
 
 <ul>
 <li>
@@ -2297,7 +2297,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="performance" class="anchor" href="#performance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Performance</h2>
+<a id="performance" class="anchor" href="#performance" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Performance</h2>
 
 <ul>
 <li><a href="http://www.kellegous.com/j/2013/01/26/layout-performance/">On Layout &amp; Web Performance</a></li>
@@ -2313,7 +2313,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="resources" class="anchor" href="#resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources</h2>
+<a id="resources" class="anchor" href="#resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resources</h2>
 
 <p><strong>Learning ES6</strong></p>
 
@@ -2447,7 +2447,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="in-the-wild" class="anchor" href="#in-the-wild" aria-hidden="true"><span class="octicon octicon-link"></span></a>In the Wild</h2>
+<a id="in-the-wild" class="anchor" href="#in-the-wild" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In the Wild</h2>
 
 <p>This is a list of organizations that are using this style guide. Send us a pull request and we'll add you to the list.</p>
 
@@ -2631,7 +2631,7 @@ emphasizes that the line is a method call, not a new statement.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="translation" class="anchor" href="#translation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Translation</h2>
+<a id="translation" class="anchor" href="#translation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translation</h2>
 
 <p>This style guide is also available in other languages:</p>
 
@@ -2681,28 +2681,28 @@ emphasizes that the line is a method call, not a new statement.</p>
 </ul>
 
 <h2>
-<a id="the-javascript-style-guide-guide" class="anchor" href="#the-javascript-style-guide-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>The JavaScript Style Guide Guide</h2>
+<a id="the-javascript-style-guide-guide" class="anchor" href="#the-javascript-style-guide-guide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The JavaScript Style Guide Guide</h2>
 
 <ul>
 <li><a href="https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide">Reference</a></li>
 </ul>
 
 <h2>
-<a id="chat-with-us-about-javascript" class="anchor" href="#chat-with-us-about-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Chat With Us About JavaScript</h2>
+<a id="chat-with-us-about-javascript" class="anchor" href="#chat-with-us-about-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Chat With Us About JavaScript</h2>
 
 <ul>
 <li>Find us on <a href="https://gitter.im/airbnb/javascript">gitter</a>.</li>
 </ul>
 
 <h2>
-<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors</h2>
+<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributors</h2>
 
 <ul>
 <li><a href="https://github.com/airbnb/javascript/graphs/contributors">View Contributors</a></li>
 </ul>
 
 <h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <p>(The MIT License)</p>
 
@@ -2730,15 +2730,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 <p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 
 <h2>
-<a id="amendments" class="anchor" href="#amendments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Amendments</h2>
+<a id="amendments" class="anchor" href="#amendments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Amendments</h2>
 
 <p>We encourage you to fork this guide and change the rules to fit your team's style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.</p>
 
 <h1>
-<a id="" class="anchor" href="#" aria-hidden="true"><span class="octicon octicon-link"></span></a>};</h1>
+<a id="" class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>};</h1>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a> is maintained by <a href="https://github.com/airbnb">airbnb</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/PinkLabs/javascript">Airbnb JavaScript Style Guide</a> is maintained by <a href="https://github.com/PinkLabs">PinkLabs</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
